@@ -2,7 +2,7 @@
 
 `NOTE`: react-controls is the library consumed by the client
 
-## Expcetion
+## Exception
 
 ```js
 Uncaught [Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object.
