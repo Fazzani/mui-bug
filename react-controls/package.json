@@ -1,0 +1,103 @@
+{
+  "name": "design-system",
+  "version": "0.0.3",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "_clean": "rimraf dist",
+    "build:lib": "npm run _clean && rollup -c",
+    "build:ts": "npm run _clean && tsc --project tsconfig.build.json",
+    "build:watch": "npm run build:ts -- --watch",
+    "release": "npm run build:lib && npm pack --pack-destination .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@mui/x-data-grid-pro": "^7.24.1",
+    "@mui/x-license": "^7.24.1",
+    "mui-one-time-password-input": "^3.0.2",
+    "@mui/icons-material": ">=5.15.15",
+    "@mui/material": ">=5.15.15",
+    "@mui/utils": ">=5.15.15",
+    "@phosphor-icons/react": ">=2.1.4 < 3",
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@babel/runtime": "^7.26.7",
+    "@fontsource/geist-sans": "^5.1.0",
+    "@mui/x-data-grid-generator": "^7.25.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@svgr/rollup": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "babel-jest": "^29.7.0",
+    "babel-plugin-react-docgen": "^4.2.1",
+    "classnames": "^2.3.2",
+    "core-js": "^3.30.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-storybook": "^0.11.2",
+    "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-preserve-directives": "^0.4.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "ts-jest": "^29.2.5",
+    "ts-node": "10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": ">=5.15.15",
+    "@mui/material": ">=5.15.15",
+    "@mui/utils": ">=5.15.15",
+    "@phosphor-icons/react": ">=2.1.4 < 3",
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.11.1"
+  }
+}

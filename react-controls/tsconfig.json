@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Target ECMAScript version
+    "module": "ESNext", // Module system, compatible with ESNext for bundlers like Rollup
+    "jsx": "react-jsx",
+    "declaration": true, // Emit `.d.ts` declaration files
+    "outDir": "./dist", // Output directory for `.js` files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable `import` and `export` interop between ES Modules and CommonJS
+    "skipLibCheck": true, // Skip type checking for declaration files (faster compilation)
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in import paths
+    "moduleResolution": "node", // Resolve modules using Node.js conventions
+    "isolatedModules": true, // Ensures each file is treated as a separate module
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["src/**/*", "typings", "config/testing/setup.ts"],
+  "exclude": ["node_modules", "dist"]
+}
