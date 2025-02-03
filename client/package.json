@@ -27,7 +27,7 @@
     "@mui/material": "^6.4.2",
     "@mui/utils": "^6.4.2",
     "@phosphor-icons/react": "^2.1.7",
-    "design-system": "file:../react-controls/design-system-0.0.3.tgz",
+    "design-system": "file:../react-controls/design-system-0.0.29.tgz",
     "mui-one-time-password-input": "^3.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
