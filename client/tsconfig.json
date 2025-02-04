@@ -21,7 +21,7 @@
     "noImplicitAny": false,
     "types": ["node", "jest"],
     "jsx": "react-jsx",
-    "typeRoots": ["./node_modules/@types", "./typings"]
+    "typeRoots": ["./node_modules/@types", "./typings"],
   },
   "ts-node": {
     "esm": true,

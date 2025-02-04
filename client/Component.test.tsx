@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-import { MuiButton, ThemeProvider as UpThemeProvider } from 'design-system';
 import { MuiOtpInput } from 'mui-one-time-password-input';
+import { Button, ThemeProvider as UpThemeProvider } from 'design-system';
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return <UpThemeProvider>{children}</UpThemeProvider>;
@@ -11,7 +11,7 @@ const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>
 
 describe('Component', () => {
   it('should run successfully', async () => {
-    const rendered = customRender(<MuiButton />);
+    const rendered = customRender(<Button >test</Button>);
   });
 
   it('MuiOtpInput should run successfully', async () => {
